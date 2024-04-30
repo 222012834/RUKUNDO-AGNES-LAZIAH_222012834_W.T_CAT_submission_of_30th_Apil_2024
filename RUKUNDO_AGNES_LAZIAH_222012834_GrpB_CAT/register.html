@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- My Name is RUKUNDO AGNES LAZIAH, RegNo: 222012834-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+     <script >
+        function confirmInsert(){
+        return confirm('Do you want to insert this record');
+               }
+
+    </script>
+    <style type="text/css">
+    body{
+    background-color: orange;
+}
+</style>
+</head>
+
+<body>
+    <center>
+    </label><h2>Registration Form</h2>
+    <form action="register.php" method="post" onsubmit="return confirmInsert();">
+
+        <label>user id:</label>
+        <input type="text" name="user_id" placeholder="enter your id"required><br><br>
+
+        <label>username:</label>
+        <input type="text" name="username" placeholder="enter your username" required><br><br>
+
+        <label>phone:</label>
+        <input type="text" name="phone" placeholder="enter your phone number" required><br><br>
+
+         <label>email:</label>
+        <input type="text" name="email" placeholder="enter your email" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="Gender" value="male" checked>Male
+        <input type="radio" name="Gender" value="female">Female<br><br>
+       
+        <label>Date:</label>
+        <input type="Date" name="Date" placeholder="enter date" required><br><br>
+
+        <label>password:</label>
+        <input type="password" name="password" placeholder="password" required><br><br>
+
+
+        <label>Activation_code:</label>
+        <input type="text" name="Activation_code" placeholder="enter activation_code"required><br><br>
+
+        <input type="submit" name="register" value="Register">
+        <input type="reset" name="cancel" value="Cancel">
+    </form>
+</center>
+</body>
+
+</html>
